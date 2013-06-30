@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08173CE017724682002F677D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08173CDF17724682002F677D /* XCTest.framework */; };
+		08173CE117724682002F677D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083D03C4175FC5CB0057D065 /* Foundation.framework */; };
+		08173CE217724682002F677D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083D03C2175FC5CB0057D065 /* UIKit.framework */; };
+		08173CE817724682002F677D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08173CE617724682002F677D /* InfoPlist.strings */; };
+		08173CEA17724682002F677D /* Shutterbug_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08173CE917724682002F677D /* Shutterbug_Tests.m */; };
 		083D03C3175FC5CB0057D065 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083D03C2175FC5CB0057D065 /* UIKit.framework */; };
 		083D03C5175FC5CB0057D065 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083D03C4175FC5CB0057D065 /* Foundation.framework */; };
 		083D03C7175FC5CB0057D065 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083D03C6175FC5CB0057D065 /* CoreGraphics.framework */; };
@@ -26,7 +31,23 @@
 		083D3F4017621CEF00975318 /* AttributedStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 083D3F3F17621CEF00975318 /* AttributedStringViewController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		08173CEC17724682002F677D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 083D03B7175FC5CB0057D065 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 083D03BE175FC5CB0057D065;
+			remoteInfo = Shutterbug;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		08173CDE17724682002F677D /* Shutterbug Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shutterbug Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08173CDF17724682002F677D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		08173CE517724682002F677D /* Shutterbug Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shutterbug Tests-Info.plist"; sourceTree = "<group>"; };
+		08173CE717724682002F677D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08173CE917724682002F677D /* Shutterbug_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shutterbug_Tests.m; sourceTree = "<group>"; };
+		08173CEB17724682002F677D /* Shutterbug Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shutterbug Tests-Prefix.pch"; sourceTree = "<group>"; };
 		083D03BF175FC5CB0057D065 /* Shutterbug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shutterbug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		083D03C2175FC5CB0057D065 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		083D03C4175FC5CB0057D065 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +79,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		08173CDB17724682002F677D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08173CE017724682002F677D /* XCTest.framework in Frameworks */,
+				08173CE217724682002F677D /* UIKit.framework in Frameworks */,
+				08173CE117724682002F677D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		083D03BC175FC5CB0057D065 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,10 +102,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08173CE317724682002F677D /* Shutterbug Tests */ = {
+			isa = PBXGroup;
+			children = (
+				08173CE917724682002F677D /* Shutterbug_Tests.m */,
+				08173CE417724682002F677D /* Supporting Files */,
+			);
+			path = "Shutterbug Tests";
+			sourceTree = "<group>";
+		};
+		08173CE417724682002F677D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08173CE517724682002F677D /* Shutterbug Tests-Info.plist */,
+				08173CE617724682002F677D /* InfoPlist.strings */,
+				08173CEB17724682002F677D /* Shutterbug Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		083D03B6175FC5CB0057D065 = {
 			isa = PBXGroup;
 			children = (
 				083D03C8175FC5CB0057D065 /* Shutterbug */,
+				08173CE317724682002F677D /* Shutterbug Tests */,
 				083D03C1175FC5CB0057D065 /* Frameworks */,
 				083D03C0175FC5CB0057D065 /* Products */,
 			);
@@ -84,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				083D03BF175FC5CB0057D065 /* Shutterbug.app */,
+				08173CDE17724682002F677D /* Shutterbug Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +146,7 @@
 				083D03C2175FC5CB0057D065 /* UIKit.framework */,
 				083D03C4175FC5CB0057D065 /* Foundation.framework */,
 				083D03C6175FC5CB0057D065 /* CoreGraphics.framework */,
+				08173CDF17724682002F677D /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,6 +201,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		08173CDD17724682002F677D /* Shutterbug Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08173CF017724682002F677D /* Build configuration list for PBXNativeTarget "Shutterbug Tests" */;
+			buildPhases = (
+				08173CDA17724682002F677D /* Sources */,
+				08173CDB17724682002F677D /* Frameworks */,
+				08173CDC17724682002F677D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08173CED17724682002F677D /* PBXTargetDependency */,
+			);
+			name = "Shutterbug Tests";
+			productName = "Shutterbug Tests";
+			productReference = 08173CDE17724682002F677D /* Shutterbug Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		083D03BE175FC5CB0057D065 /* Shutterbug */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 083D03E2175FC5CC0057D065 /* Build configuration list for PBXNativeTarget "Shutterbug" */;
@@ -174,6 +245,9 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Mads Bielefeldt";
 				TargetAttributes = {
+					08173CDD17724682002F677D = {
+						TestTargetID = 083D03BE175FC5CB0057D065;
+					};
 					083D03BE175FC5CB0057D065 = {
 						DevelopmentTeam = 8AQ2Q5KM77;
 					};
@@ -192,11 +266,20 @@
 			projectRoot = "";
 			targets = (
 				083D03BE175FC5CB0057D065 /* Shutterbug */,
+				08173CDD17724682002F677D /* Shutterbug Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		08173CDC17724682002F677D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08173CE817724682002F677D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		083D03BD175FC5CB0057D065 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -213,6 +296,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		08173CDA17724682002F677D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08173CEA17724682002F677D /* Shutterbug_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		083D03BB175FC5CB0057D065 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,7 +321,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		08173CED17724682002F677D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 083D03BE175FC5CB0057D065 /* Shutterbug */;
+			targetProxy = 08173CEC17724682002F677D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		08173CE617724682002F677D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08173CE717724682002F677D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		083D03CB175FC5CB0057D065 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -250,6 +357,63 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		08173CEE17724682002F677D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Shutterbug.app/Shutterbug";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shutterbug Tests/Shutterbug Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Shutterbug Tests/Shutterbug Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		08173CEF17724682002F677D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Shutterbug.app/Shutterbug";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shutterbug Tests/Shutterbug Tests-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Shutterbug Tests/Shutterbug Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		083D03E0175FC5CC0057D065 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -337,6 +501,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		08173CF017724682002F677D /* Build configuration list for PBXNativeTarget "Shutterbug Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08173CEE17724682002F677D /* Debug */,
+				08173CEF17724682002F677D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		083D03BA175FC5CB0057D065 /* Build configuration list for PBXProject "Shutterbug" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

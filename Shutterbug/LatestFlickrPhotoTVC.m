@@ -31,7 +31,7 @@
     [self.refreshControl beginRefreshing];
     dispatch_queue_t loaderQueue = dispatch_queue_create("Flickr Loader Queue", NULL);
     dispatch_async(loaderQueue, ^{
-        NSArray *latestPhotos = [FlickrFetcher recentGeoreferencedPhotos];
+        NSArray *latestPhotos = [FlickrFetcher latestGeoreferencedPhotos];
         dispatch_async(dispatch_get_main_queue(), ^{
             self.photos = latestPhotos;
             [self.refreshControl endRefreshing];
